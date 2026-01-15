@@ -100,34 +100,40 @@
         }
         
         .hero .subtitle {
-            font-size: 1.8rem;
+            font-size: 2rem;
             color: var(--text-light);
-            margin: 20px 0;
+            margin: 30px 0;
+            font-weight: 300;
             animation: fadeInUp 1s ease-out 0.3s both;
         }
         
         .hero .tagline {
-            font-size: 1.2rem;
-            color: var(--text-gray);
-            margin: 30px 0;
-            font-style: italic;
+            font-size: 1rem;
+            color: #999;
+            margin: 20px 0;
+            font-style: normal;
+            text-transform: uppercase;
+            letter-spacing: 3px;
             animation: fadeInUp 1s ease-out 0.6s both;
         }
         
         .event-details {
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            border-radiutransparent;
+            background: transparent;
             border: 1px solid #333;
-            border-radius: 0
-            max-width: 600px;
+            border-radius: 0;
+            padding: 50px;
+            margin: 50px auto;
+            max-width: 700px;
             animation: fadeInUp 1s ease-out 0.9s both;
         }
         
         .event-details h3 {
-            font-size: 1.5rem;
+            font-size: 0.9rem;
             color: var(--text-light);
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 300;
         }
         
         .event-info {
@@ -139,15 +145,22 @@
         .info-item {
             display: flex;
             align-items: center;
-            gap: 15px;
-            font-size: 1.1rem;
-            color: var(--text-light);
+            gap: 20px;
+            font-size: 1rem;
+            color: #ccc;
+            padding: 15px 0;
+            border-bottom: 1px solid #222;
+        }
+        
+        .info-item:last-child {
+            border-bottom: none;
         }
         
         .info-icon {
-            font-size: 1.5rem;
-            width: 40px;
+            font-size: 1.2rem;
+            width: 30px;
             text-align: center;
+            opacity: 0.7;
         }
         
         .cta-button {
@@ -198,9 +211,9 @@
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 11px;
+            width: 80px;
+            height: 3px;
             background: var(--text-dark);
-            border-radius: 0-gradient(45deg, var(--primary-color), var(--secondary-color));
             border-radius: 2px;
         }
         
@@ -212,10 +225,10 @@
         }
         
         .about-text h3 {
-            font-size: 2rtext-dark);
+            font-size: 2rem;
+            color: var(--text-dark);
             margin-bottom: 20px;
-            font-weight: 300y-color);
-            margin-bottom: 20px;
+            font-weight: 300;
         }
         
         .about-text p {
@@ -225,7 +238,8 @@
             color: #555;
         }
         
-        .pastor-profile var(--dark-bg);
+        .pastor-profile {
+            background: var(--dark-bg);
             padding: 40px;
             border-radius: 0;
             color: var(--text-light);
@@ -240,15 +254,16 @@
         }
         
         .pastor-profile p {
-            color: #ccc
-            color: var(--text-gray);
+            color: #ccc;
             line-height: 1.8;
         }
         
         /* ========================================
            WHAT TO EXPECT SECTION
            ======================================== */
-        .expect {#f5f5f5;
+        .expect {
+            padding: var(--section-padding);
+            background: #f5f5f5;
             color: var(--text-dark);
         }
         
@@ -257,9 +272,7 @@
         }
         
         .expect .section-title::after {
-            background: var(--text-dark
-        .expect .section-title::after {
-            background: var(--text-light);
+            background: var(--text-dark);
         }
         
         .expect-grid {
@@ -268,7 +281,8 @@
             gap: 30px;
             margin-top: 50px;
         }
-        var(--light-bg);
+        .expect-card {
+            background: var(--light-bg);
             padding: 40px 30px;
             border-radius: 0;
             text-align: center;
@@ -277,19 +291,19 @@
         }
         
         .expect-card:hover {
-            border-color: var(--text-dark
-            transform: translateY(-10px);
-            background: rgba(255,255,255,0.2);
+            border-color: var(--text-dark);
         }
         
         .expect-icon {
-            font-size: 3rem;
+            font-size: 2rem;
             margin-bottom: 20px;
+            opacity: 0.8;
         }
         
         .expect-card h3 {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             margin-bottom: 15px;
+            font-weight: 400;
         }
         
         .expect-card p {
@@ -303,8 +317,7 @@
         .history {
             padding: var(--section-padding);
             background: var(--light-bg);
-            color: var(--text-light);
-        }dark);
+            color: var(--text-dark);
         }
         
         .history .section-title {
@@ -312,7 +325,8 @@
         }
         
         .history .section-title::after {
-            background: var(--text-dark
+            background: var(--text-dark);
+        }
         
         .timeline {
             max-width: 900px;
@@ -325,11 +339,10 @@
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
-            width: 4px;
+            width: 2px;
             height: 100%;
-            backgro1px;
-            height: 100%;
-            background: var(--border-color
+            background: var(--border-color);
+        }
         .timeline-item {
             margin-bottom: 50px;
             position: relative;
@@ -349,9 +362,7 @@
         
         .timeline-content {
             width: calc(50% - 30px);
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            padding: 30pvar(--light-bg);
+            background: var(--light-bg);
             padding: 30px;
             border-radius: 0;
             position: relative;
@@ -373,95 +384,67 @@
         }
         
         .timeline-description {
-            color: #555
+            color: #555;
+        }
         
         .timeline-dot {
             position: absolute;
             top: 30px;
             left: 50%;
             transform: translateX(-50%);
-            width: 20px;
-            height:12px;
-            height: 12px;
+            width: 16px;
+            height: 16px;
             background: var(--text-dark);
             border-radius: 50%;
-            border: 32;
+            border: 3px solid var(--light-bg);
         }
         
         /* ========================================
-           TICKETS SECTION
+           REGISTRATION SECTION
            ======================================== */
         .tickets {
             padding: var(--section-padding);
-            background: var(--text-light);
-        }
-        
-        .ticket-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-        
-        .ticket-card {var(--light-bg);
-            padding: 40px;
-            border-radius: 0;
-            color: var(--text-dark);
+            background: var(--light-bg);
             text-align: center;
-            position: relative;
-            overflow: hidden;
-            transition: border-color 0.3s ease;
+        }
+        
+        .register-info {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 50px;
             border: 1px solid var(--border-color);
+            background: var(--light-bg);
         }
         
-        .ticket-card:hover {
-            border-color: var(--text-dark);
+        .register-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            font-weight: 300;
         }
         
-        .ticket-card::before {
-            content: '';
-            display: none;
-            100% { transform: rotate(360deg); }
-        }
-        
-        .ticket-type {
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        
-        .ticket-price {
-            font-size: 3rem;
-            font-weight: bold;
-            margin: 20px 0;
-            color: var(--secondary-color);
-        }
-        
-        .ticket-features {
-            list-style: none;
-            margin: 30px 0;
-            text-align: left;
-        }300;
-            margin: 20px 0;
-            color: var(--text-dark
-            padding: 10px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-        }
-        
-        .ticket-features li::before {
-            content: '✓ ';
-            color: var(--secondary-color);
-            font-weight: bold;
-            margin-right: 10px;
-        }
-        var(--border-color);
+        .register-info p {
+            font-size: 1.1rem;
+            line-height: 1.8;
             color: #555;
+            margin-bottom: 20px;
         }
         
-        .ticket-features li::before {
-            content: '✓ ';
-            color: var(--text-dark
+        .contact-link {
+            color: var(--text-dark);
+            border-bottom: 1px solid var(--text-dark);
+            text-decoration: none;
+            padding-bottom: 2px;
+            transition: opacity 0.3s ease;
+        }
+        
+        .contact-link:hover {
+            opacity: 0.6;
+        }
+        
+        /* ========================================
+           FOOTER / CONTACT SECTION
+           ======================================== */
+        .footer {
             background: var(--dark-bg);
             color: var(--text-light);
             text-align: center;
@@ -475,7 +458,8 @@
         .footer h3 {
             font-size: 2rem;
             margin-bottom: 20px;
-            color: var(--secondary-color);
+            color: var(--text-light);
+            font-weight: 300;
         }
         
         .contact-info {
@@ -483,36 +467,22 @@
             font-size: 1.1rem;
         }
         
-        .contact-info a {text-light);
-            font-weight: 300
-            color: var(--secondary-color);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .contact-info a:hover {
-            color: var(--primary-color);
-        }text-light);
+        .contact-info a {
+            color: var(--text-light);
             text-decoration: none;
             transition: opacity 0.3s ease;
             border-bottom: 1px solid #555;
         }
         
         .contact-info a:hover {
-            opacity: 0.7
+            opacity: 0.7;
         }
         
         .social-links a {
             display: inline-block;
             width: 50px;
             height: 50px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            color: var(-transparent;
+            background: transparent;
             border-radius: 0;
             display: flex;
             align-items: center;
@@ -522,17 +492,24 @@
             text-decoration: none;
             transition: all 0.3s ease;
             border: 1px solid #555;
+            margin: 0 10px;
         }
         
         .social-links a:hover {
             background: var(--text-light);
-            color: var(--dark-bg(255,255,255,0.1);
-            color: var(--text-gray);
+            color: var(--dark-bg);
+        }
+        
+        .copyright {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            color: #888;
         }
         
         /* ========================================
-           ANIMATIONS#333;
-            color: #888================ */
+           ANIMATIONS
+           ======================================== */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -599,31 +576,31 @@
                 <span class="year">2026</span>
             </h1>
             <p class="subtitle">A Healing Worship Concert</p>
-            <p class="tagline">"Where Heaven Meets Earth - Experience the Presence of God"</p>
+            <p class="tagline">Where Heaven Meets Earth</p>
             
             <div class="event-details">
-                <h3>Event Details</h3>
+                <h3>Event Information</h3>
                 <div class="event-info">
                     <div class="info-item">
                         <span class="info-icon">📅</span>
-                        <span><strong>Date:</strong> To Be Announced</span>
+                        <span>Date To Be Announced</span>
                     </div>
                     <div class="info-item">
                         <span class="info-icon">⏰</span>
-                        <span><strong>Time:</strong> 6:00 PM IST</span>
+                        <span>6:00 PM IST</span>
                     </div>
                     <div class="info-item">
                         <span class="info-icon">📍</span>
-                        <span><strong>Venue:</strong> Chennai, India (Location TBA)</span>
+                        <span>Chennai, India</span>
                     </div>
                     <div class="info-item">
                         <span class="info-icon">🎤</span>
-                        <span><strong>Led by:</strong> Pastor Gersson Edinbaro</span>
+                        <span>Pastor Gersson Edinbaro</span>
                     </div>
                 </div>
             </div>
             
-            <a href="#tickets" class="cta-button">Get Your Tickets</a>
+            <a href="#register" class="cta-button">Register Your Interest</a>
         </div>
     </section>
 
@@ -853,8 +830,8 @@
             </div>
         </div>
     </section>
-#000; border-bottom: 1px solid #000; text-decoration: none;">+91 89 39 49 3333</a> 
-                    or email <a href="mailto:support@aliveconcert.org" style="color: #000; border-bottom: 1px solid #000; text-decoration: none
+
+    <!-- ========================================
          FOOTER / CONTACT SECTION
          Edit: Contact information and social links
          ======================================== -->
