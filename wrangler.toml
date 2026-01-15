@@ -1,9 +1,7 @@
 name = "concert-gerssonedinbaro-com"
-main = "index.html"
+main = "_worker.js"
 compatibility_date = "2024-01-15"
 
-[site]
-bucket = "./"
-
-[[assets]]
+[assets]
+directory = "./"
 binding = "ASSETS"
