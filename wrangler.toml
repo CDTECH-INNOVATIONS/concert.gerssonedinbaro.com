@@ -1,0 +1,9 @@
+name = "concert-gerssonedinbaro-com"
+main = "index.html"
+compatibility_date = "2024-01-15"
+
+[site]
+bucket = "./"
+
+[[assets]]
+binding = "ASSETS"
