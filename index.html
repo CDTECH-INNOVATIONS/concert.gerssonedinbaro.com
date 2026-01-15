@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALIVE 2026 - A Healing Worship Concert by Pastor Gersson Edinbaro</title>
+    
+    <style>
+        /* ========================================
+           EASY CUSTOMIZATION VARIABLES
+           Change these values to customize colors, fonts, and spacing
+           ======================================== */
+        :root {
+            /* Minimalistic Black & White Palette */
+            --primary-color: #000000;
+            --secondary-color: #333333;
+            --dark-bg: #000000;
+            --light-bg: #ffffff;
+            --accent-color: #1a1a1a;
+            --text-light: #ffffff;
+            --text-gray: #666666;
+            --text-dark: #000000;
+            --border-color: #e0e0e0;
+            
+            /* Typography */
+            --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-heading: 'Arial', sans-serif;
+            
+            /* Spacing */
+            --section-padding: 80px 20px;
+            --container-max-width: 1200px;
+        }
+        
+        /* ========================================
+           RESET & BASE STYLES
+           ======================================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-main);
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--dark-bg);
+            overflow-x: hidden;
+        }
+        
+        /* ========================================
+           HERO SECTION
+           ======================================== */
+        .hero {
+            min-height: 100vh;
+            background: var(--dark-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 1px solid #222;
+        }
+        
+        /* Minimal background effect */
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+        }
+        
+        .hero h1 {
+            font-family: var(--font-heading);
+            font-size: 5rem;
+            color: var(--text-light);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 12px;
+            font-weight: 300;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .hero .year {
+            font-size: 8rem;
+            display: block;
+            color: var(--text-light);
+            font-weight: 100;
+            letter-spacing: 16px;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.8rem;
+            color: var(--text-light);
+            margin: 20px 0;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+        
+        .hero .tagline {
+            font-size: 1.2rem;
+            color: var(--text-gray);
+            margin: 30px 0;
+            font-style: italic;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+        
+        .event-details {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radiutransparent;
+            border: 1px solid #333;
+            border-radius: 0
+            max-width: 600px;
+            animation: fadeInUp 1s ease-out 0.9s both;
+        }
+        
+        .event-details h3 {
+            font-size: 1.5rem;
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+        
+        .event-info {
+            display: grid;
+            gap: 15px;
+            text-align: left;
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 1.1rem;
+            color: var(--text-light);
+        }
+        
+        .info-icon {
+            font-size: 1.5rem;
+            width: 40px;
+            text-align: center;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 18px 50px;
+            background: var(--text-light);
+            color: var(--dark-bg);
+            text-decoration: none;
+            border-radius: 0;
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-top: 30px;
+            transition: background 0.3s ease, color 0.3s ease;
+            border: 2px solid var(--text-light);
+            letter-spacing: 2px;
+        }
+        
+        .cta-button:hover {
+            background: transparent;
+            color: var(--text-light);
+        }
+        
+        /* ========================================
+           ABOUT SECTION
+           ======================================== */
+        .about {
+            padding: var(--section-padding);
+            background: var(--text-light);
+        }
+        
+        .container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--dark-bg);
+            position: relative;
+            padding-bottom: 20px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 11px;
+            background: var(--text-dark);
+            border-radius: 0-gradient(45deg, var(--primary-color), var(--secondary-color));
+            border-radius: 2px;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .about-text h3 {
+            font-size: 2rtext-dark);
+            margin-bottom: 20px;
+            font-weight: 300y-color);
+            margin-bottom: 20px;
+        }
+        
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        
+        .pastor-profile var(--dark-bg);
+            padding: 40px;
+            border-radius: 0;
+            color: var(--text-light);
+            border: 1px solid #333;
+        }
+        
+        .pastor-profile h4 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--text-light);
+            font-weight: 300;
+        }
+        
+        .pastor-profile p {
+            color: #ccc
+            color: var(--text-gray);
+            line-height: 1.8;
+        }
+        
+        /* ========================================
+           WHAT TO EXPECT SECTION
+           ======================================== */
+        .expect {#f5f5f5;
+            color: var(--text-dark);
+        }
+        
+        .expect .section-title {
+            color: var(--text-dark);
+        }
+        
+        .expect .section-title::after {
+            background: var(--text-dark
+        .expect .section-title::after {
+            background: var(--text-light);
+        }
+        
+        .expect-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        var(--light-bg);
+            padding: 40px 30px;
+            border-radius: 0;
+            text-align: center;
+            transition: border-color 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+        
+        .expect-card:hover {
+            border-color: var(--text-dark
+            transform: translateY(-10px);
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .expect-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .expect-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .expect-card p {
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        /* ========================================
+           TIMELINE / HISTORY SECTION
+           ======================================== */
+        .history {
+            padding: var(--section-padding);
+            background: var(--light-bg);
+            color: var(--text-light);
+        }dark);
+        }
+        
+        .history .section-title {
+            color: var(--text-dark);
+        }
+        
+        .history .section-title::after {
+            background: var(--text-dark
+        
+        .timeline {
+            max-width: 900px;
+            margin: 50px auto;
+            position: relative;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            backgro1px;
+            height: 100%;
+            background: var(--border-color
+        .timeline-item {
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-left: auto;
+            margin-right: 50px;
+            text-align: right;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-left: 50px;
+            margin-right: auto;
+            text-align: left;
+        }
+        
+        .timeline-content {
+            width: calc(50% - 30px);
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 30pvar(--light-bg);
+            padding: 30px;
+            border-radius: 0;
+            position: relative;
+            border: 1px solid var(--border-color);
+        }
+        
+        .timeline-date {
+            font-size: 2rem;
+            font-weight: 300;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+        
+        .timeline-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+            font-weight: 400;
+        }
+        
+        .timeline-description {
+            color: #555
+        
+        .timeline-dot {
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height:12px;
+            height: 12px;
+            background: var(--text-dark);
+            border-radius: 50%;
+            border: 32;
+        }
+        
+        /* ========================================
+           TICKETS SECTION
+           ======================================== */
+        .tickets {
+            padding: var(--section-padding);
+            background: var(--text-light);
+        }
+        
+        .ticket-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .ticket-card {var(--light-bg);
+            padding: 40px;
+            border-radius: 0;
+            color: var(--text-dark);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: border-color 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+        
+        .ticket-card:hover {
+            border-color: var(--text-dark);
+        }
+        
+        .ticket-card::before {
+            content: '';
+            display: none;
+            100% { transform: rotate(360deg); }
+        }
+        
+        .ticket-type {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .ticket-price {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 20px 0;
+            color: var(--secondary-color);
+        }
+        
+        .ticket-features {
+            list-style: none;
+            margin: 30px 0;
+            text-align: left;
+        }300;
+            margin: 20px 0;
+            color: var(--text-dark
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .ticket-features li::before {
+            content: '✓ ';
+            color: var(--secondary-color);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        var(--border-color);
+            color: #555;
+        }
+        
+        .ticket-features li::before {
+            content: '✓ ';
+            color: var(--text-dark
+            background: var(--dark-bg);
+            color: var(--text-light);
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .footer h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+        
+        .contact-info {
+            margin: 30px 0;
+            font-size: 1.1rem;
+        }
+        
+        .contact-info a {text-light);
+            font-weight: 300
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-info a:hover {
+            color: var(--primary-color);
+        }text-light);
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+            border-bottom: 1px solid #555;
+        }
+        
+        .contact-info a:hover {
+            opacity: 0.7
+        }
+        
+        .social-links a {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(-transparent;
+            border-radius: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--text-light);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 1px solid #555;
+        }
+        
+        .social-links a:hover {
+            background: var(--text-light);
+            color: var(--dark-bg(255,255,255,0.1);
+            color: var(--text-gray);
+        }
+        
+        /* ========================================
+           ANIMATIONS#333;
+            color: #888================ */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* ========================================
+           RESPONSIVE DESIGN
+           ======================================== */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+                letter-spacing: 4px;
+            }
+            
+            .hero .year {
+                font-size: 5rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.3rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .timeline::before {
+                left: 20px;
+            }
+            
+            .timeline-item:nth-child(odd) .timeline-content,
+            .timeline-item:nth-child(even) .timeline-content {
+                margin-left: 60px;
+                margin-right: 0;
+                text-align: left;
+                width: calc(100% - 60px);
+            }
+            
+            .timeline-dot {
+                left: 20px;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ========================================
+         HERO SECTION
+         Edit: Event date, time, venue, and tagline
+         ======================================== -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>
+                ALIVE
+                <span class="year">2026</span>
+            </h1>
+            <p class="subtitle">A Healing Worship Concert</p>
+            <p class="tagline">"Where Heaven Meets Earth - Experience the Presence of God"</p>
+            
+            <div class="event-details">
+                <h3>Event Details</h3>
+                <div class="event-info">
+                    <div class="info-item">
+                        <span class="info-icon">📅</span>
+                        <span><strong>Date:</strong> To Be Announced</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">⏰</span>
+                        <span><strong>Time:</strong> 6:00 PM IST</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <span><strong>Venue:</strong> Chennai, India (Location TBA)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🎤</span>
+                        <span><strong>Led by:</strong> Pastor Gersson Edinbaro</span>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#tickets" class="cta-button">Get Your Tickets</a>
+        </div>
+    </section>
+
+    <!-- ========================================
+         ABOUT SECTION
+         Edit: Description and pastor bio
+         ======================================== -->
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">About ALIVE Concert</h2>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>A Night of Powerful Worship & Miracles</h3>
+                    <p>
+                        ALIVE is not just another music concert – it's a transformative worship experience where 
+                        heaven meets earth. For years, ALIVE concerts have been celebrated across multiple cities 
+                        in India, bringing together thousands of believers for an unforgettable encounter with God's presence.
+                    </p>
+                    <p>
+                        Each ALIVE concert is marked by epic worship, powerful prophetic messages, and testimonies 
+                        of miraculous healings - from cancer disappearing to deaf ears opening and long-term illnesses 
+                        being completely reversed. Come ready to experience God's power in a fresh and holy way.
+                    </p>
+                    <p>
+                        ALIVE 2026 promises to be the most powerful gathering yet, featuring state-of-the-art sound, 
+                        lighting, and dynamic visuals that will amplify the energy of the night. This is your invitation 
+                        to be part of something extraordinary.
+                    </p>
+                </div>
+                
+                <div class="pastor-profile">
+                    <h4>Pastor Gersson Edinbaro</h4>
+                    <p><strong>Lead Pastor - Powercentral Church</strong></p>
+                    <p>
+                        Pastor Gersson Edinbaro is a force for change, with thousands encountering the life-transforming 
+                        power of Jesus through his crusades, concerts, and meetings. His ministry has witnessed countless 
+                        testimonies of cancers disappearing, tumors vanishing, deaf ears opening, and long-term illnesses 
+                        being completely reversed.
+                    </p>
+                    <p>
+                        As a gifted songwriter and worship leader from Chennai, India, Pastor Gersson has written and 
+                        sung numerous songs that have touched and blessed countless lives globally. He is also a passionate 
+                        teacher of the Word, imparting deep revelation with clarity and impact.
+                    </p>
+                    <p>
+                        The anointing on his life is undeniable, and each of his meetings is marked by a powerful move 
+                        of the Holy Spirit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         WHAT TO EXPECT SECTION
+         Edit: Key features of the concert
+         ======================================== -->
+    <section class="expect">
+        <div class="container">
+            <h2 class="section-title">What to Expect</h2>
+            
+            <div class="expect-grid">
+                <div class="expect-card">
+                    <div class="expect-icon">🙏</div>
+                    <h3>The Presence of God</h3>
+                    <p>
+                        Experience an undeniable encounter with God's presence. This isn't just music – 
+                        it's a space where heaven meets earth. People leave drenched in His presence, 
+                        experiencing His power and love in a transformative way.
+                    </p>
+                </div>
+                
+                <div class="expect-card">
+                    <div class="expect-icon">🎵</div>
+                    <h3>Epic Worship</h3>
+                    <p>
+                        Immerse yourself in an atmosphere filled with incredible music and authentic worship. 
+                        With top-tier musicians and state-of-the-art sound, lighting, and dynamic visuals, 
+                        you'll experience worship designed to take you deeper.
+                    </p>
+                </div>
+                
+                <div class="expect-card">
+                    <div class="expect-icon">✨</div>
+                    <h3>Miracles & Healings</h3>
+                    <p>
+                        Come expecting the miraculous. Pastor Gersson's ministry has seen incredible testimonies – 
+                        from cancer healing to life-changing breakthroughs. Come ready to receive, because 
+                        God is on the move, and miracles are happening.
+                    </p>
+                </div>
+                
+                <div class="expect-card">
+                    <div class="expect-icon">📖</div>
+                    <h3>A Powerful Word</h3>
+                    <p>
+                        Receive a brief but powerful prophetic word from Pastor Gersson, delivered in his 
+                        unique and engaging style. A message that'll challenge you to walk out with renewed 
+                        purpose and faith.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         HISTORY / TIMELINE SECTION
+         Edit: Previous concert dates and highlights
+         ======================================== -->
+    <section class="history">
+        <div class="container">
+            <h2 class="section-title">ALIVE Concert Legacy</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">JUNE 2025</div>
+                        <div class="timeline-title">ALIVE 2025 - Chennai</div>
+                        <div class="timeline-description">
+                            After 9 years, ALIVE returned to Chennai at YMCA Nandanam with thousands in attendance. 
+                            The night was marked by powerful worship, healings, and an overwhelming presence of God. 
+                            A new original song "Thooyarae" was released, blessing countless lives.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2016-2024</div>
+                        <div class="timeline-title">Multiple Cities Tour</div>
+                        <div class="timeline-description">
+                            ALIVE concerts traveled to multiple cities across India, impacting tens of thousands 
+                            of lives. Each event brought fresh encounters with God, with testimonies of healing, 
+                            deliverance, and spiritual transformation flooding in from every location.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">EARLY YEARS</div>
+                        <div class="timeline-title">ALIVE Chennai - The Beginning</div>
+                        <div class="timeline-description">
+                            The ALIVE concert series began in Chennai with a vision to celebrate the resurrection 
+                            of Jesus Christ through gospel music. What started as a worship gathering quickly became 
+                            a movement, with people's lives being radically transformed by God's power.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2026</div>
+                        <div class="timeline-title">ALIVE 2026 - Coming Soon</div>
+                        <div class="timeline-description">
+                            Get ready for the most powerful ALIVE concert yet! With enhanced production, 
+                            cutting-edge visuals, and an even deeper hunger for God's presence, ALIVE 2026 
+                            is set to be an unforgettable night of worship and miracles.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         TICKETS SECTION
+         Edit: Ticket types, prices, and features
+         ======================================== -->
+    <section class="tickets" id="tickets">
+        <div class="container">
+            <h2 class="section-title">Secure Your Seat</h2>
+            
+            <div class="ticket-grid">
+                <div class="ticket-card">
+                    <h3 class="ticket-type">Bronze</h3>
+                    <div class="ticket-price">₹299</div>
+                    <ul class="ticket-features">
+                        <li>General Admission</li>
+                        <li>Collective Worship Atmosphere</li>
+                        <li>Full Event Access</li>
+                        <li>Free Parking</li>
+                    </ul>
+                    <a href="#" class="cta-button">Book Now</a>
+                </div>
+                
+                <div class="ticket-card">
+                    <h3 class="ticket-type">Praise Pit</h3>
+                    <div class="ticket-price">₹499</div>
+                    <ul class="ticket-features">
+                        <li>Standing Only - Near Stage</li>
+                        <li>Immersive Worship Experience</li>
+                        <li>Exclusive Praise-Pit Section</li>
+                        <li>Priority Entry</li>
+                        <li>Free Parking</li>
+                    </ul>
+                    <a href="#" class="cta-button">Book Now</a>
+                </div>
+                
+                <div class="ticket-card">
+                    <h3 class="ticket-type">Live Stream</h3>
+                    <div class="ticket-price">Free</div>
+                    <ul class="ticket-features">
+                        <li>Watch from Anywhere</li>
+                        <li>International Access</li>
+                        <li>HD Quality Stream</li>
+                        <li>Live Interaction</li>
+                        <li>Worship from Home</li>
+                    </ul>
+                    <a href="#" class="cta-button">Register</a>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <p style="font-size: 1.1rem; color: #666;">
+                    <strong>Note:</strong> Children below 4 years of age can enter for free. No ticket required.
+                </p>
+                <p style="margin-top: 20px; font-size: 1.2rem; color: #333;">
+                    For more information: <a href="tel:+918939493333" style="color: var(--primary-color);">+91 89 39 49 3333</a> 
+                    or email <a href="mailto:support@aliveconcert.org" style="color: var(--primary-color);">support@aliveconcert.org</a>
+                </p>
+            </div>
+        </div>
+    </section>
+#000; border-bottom: 1px solid #000; text-decoration: none;">+91 89 39 49 3333</a> 
+                    or email <a href="mailto:support@aliveconcert.org" style="color: #000; border-bottom: 1px solid #000; text-decoration: none
+         FOOTER / CONTACT SECTION
+         Edit: Contact information and social links
+         ======================================== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Stay Connected</h3>
+            <p>Follow Pastor Gersson Edinbaro for updates about ALIVE 2026 and other upcoming events</p>
+            
+            <div class="social-links">
+                <a href="https://www.instagram.com/gerssonedinbaro" target="_blank" title="Instagram">📷</a>
+                <a href="https://www.facebook.com/gerssonedinbaro" target="_blank" title="Facebook">📘</a>
+                <a href="https://www.youtube.com/gerssonedinbaro" target="_blank" title="YouTube">📺</a>
+                <a href="https://twitter.com/gerssonedinbaro" target="_blank" title="X (Twitter)">🐦</a>
+            </div>
+            
+            <div class="contact-info">
+                <p><strong>Official Website:</strong> <a href="https://gerssonedinbaro.com" target="_blank">gerssonedinbaro.com</a></p>
+                <p><strong>ALIVE Concert Website:</strong> <a href="https://www.aliveconcert.org" target="_blank">aliveconcert.org</a></p>
+                <p><strong>Powercentral Church</strong></p>
+                <p>YMCA Ashok Nagar, Chennai – 600083</p>
+                <p>Phone: <a href="tel:+918939229999">+91 89 39 22 9999</a></p>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 Powercentral Church. All rights reserved.</p>
+                <p>ALIVE - A Healing Worship Concert by Pastor Gersson Edinbaro</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
